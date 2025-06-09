@@ -510,7 +510,7 @@ footer p {
     max-width: none;
     padding-right: 0;
   }
-  .ovflow:active,
+
   .ovflowContent {
     transform: translateX(0);
     transition: 0.5s;
