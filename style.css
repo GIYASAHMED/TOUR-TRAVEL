@@ -17,6 +17,7 @@ html,
 body {
   width: 100%;
   height: 100%;
+  scroll-behavior: smooth;
 }
 .sectionPadding {
   padding-top: 100px;
@@ -347,7 +348,7 @@ span {
 }
 .point {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: flex-start;
 }
 .point i {
@@ -509,15 +510,6 @@ footer p {
     max-width: none;
     padding-right: 0;
   }
-  /* .aboutUsImg {
-    width: 100%;
-    height: 70vh;
-    background-image: url("https://plus.unsplash.com/premium_photo-1676139860076-bc568722ff75?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGxhY2V8ZW58MHx8MHx8fDA%3D");
-    background-size: contain;
-    background-position: left;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  } */
 }
 @media (min-width: 576px) {
   .container {
