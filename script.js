@@ -18,7 +18,7 @@ $(document).ready(function () {
 });
 
 const navbar = document.querySelector("#navBar");
-const navLink = document.querySelectorAll(".nav-link");
+const navLink = document.querySelectorAll(".nav-link2");
 let lastScroll = 50;
 
 function handleNavbar() {
@@ -43,3 +43,65 @@ function handleNavbar() {
 
 window.addEventListener("scroll", handleNavbar);
 window.addEventListener("DOMContentLoaded", handleNavbar);
+
+// WhatsApp Api
+function redirectToWhatsApp(phoneNumber, message) {
+  // Remove any non-digit characters from phone number
+  const cleanedNumber = phoneNumber.replace(/\D/g, "");
+
+  // Encode the message for URL
+  const encodedMessage = encodeURIComponent(message);
+
+  // Create the WhatsApp URL
+  const whatsappUrl = `https://wa.me/${cleanedNumber}?text=${encodedMessage}`;
+
+  // Redirect to WhatsApp
+  window.open(whatsappUrl, "_blank");
+}
+
+// Example usage:
+let whatsapp = document.querySelectorAll(".whatsAppLogo");
+whatsapp.forEach((e) => {
+  console.log(e);
+
+  e.addEventListener("click", function () {
+    const phoneNumber = "917002525098"; // Replace with your variable
+    const message = "Hello, this is a test message"; // Replace with your variable
+    redirectToWhatsApp(phoneNumber, message);
+  });
+});
+
+// Vehicle WhatsApp Api
+function redirectToWhatsApp(phoneNumber, message) {
+  // Remove any non-digit characters from phone number
+  const cleanedNumber = phoneNumber.replace(/\D/g, "");
+
+  // Encode the message for URL
+  const encodedMessage = encodeURIComponent(message);
+
+  // Create the WhatsApp URL
+  const whatsappUrl = `https://wa.me/${cleanedNumber}?text=${encodedMessage}`;
+
+  // Redirect to WhatsApp
+  window.open(whatsappUrl, "_blank");
+}
+
+// Example usage:
+let whatsappVehicle = document.querySelectorAll(".whatsappLink");
+whatsappVehicle.forEach((e) => {
+  console.log(e);
+
+  e.addEventListener("click", function () {
+    const phoneNumber = "917002525098"; // Replace with your variable
+    const message = "Hello, this is a test message"; // Replace with your variable
+    redirectToWhatsApp(phoneNumber, message);
+  });
+});
+
+var swiper = new Swiper(".testimonialSwiper", {
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});

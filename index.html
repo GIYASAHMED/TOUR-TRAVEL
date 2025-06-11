@@ -31,6 +31,12 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <!-- swiper CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/animate.css" />
     <!-- Main CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -41,9 +47,12 @@
           id="navBar"
           class="navbar navbar-expand-lg fixed-top lg-px-5 sm-px-0"
         >
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"
+          <div class="container">
+            <!-- <a class="navbar-brand" href="#"
               ><span><span class="text-white">Baishnavie</span> Travels</span>
+            </a> -->
+            <a href="#">
+              <img src="./baishnavieLogo.png" alt="" id="mainLogo" />
             </a>
             <button
               class="navbar-toggler"
@@ -67,19 +76,27 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#">About Us</a>
+                  <a class="nav-link text-white" href="about.html">About Us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#">Car and Services</a>
+                  <a class="nav-link text-white" href="services.html"
+                    >Car and Services</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#">Destinations</a>
+                  <a class="nav-link text-white" href="destinations.html"
+                    >Destinations</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#">Tour Packages</a>
+                  <a class="nav-link text-white" href="tourPackage.html"
+                    >Tour Packages</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#">Contact Us</a>
+                  <a class="nav-link text-white" href="contact.html"
+                    >Contact Us</a
+                  >
                 </li>
               </ul>
             </div>
@@ -100,7 +117,7 @@
                 />
 
                 <div class="carouselContent">
-                  <span>Baishnavie Travels</span>
+                  <!-- <span>Baishnavie Travels</span> -->
                   <h2>Explore the unseen travel with ease</h2>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -110,9 +127,15 @@
 
                   <div class="buttons">
                     <button>
-                      Enquiry Now <i class="ri-arrow-right-line"></i>
+                      <a href="contact.html" class="text-white">Enquiry Now</a>
+                      <i class="ri-arrow-right-line"></i>
                     </button>
-                    <button>Call Now <i class="ri-phone-fill"></i></button>
+                    <button>
+                      <a href="tel:+918134961443" class="text-black"
+                        >Call Now</a
+                      >
+                      <i class="ri-phone-fill"></i>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -123,7 +146,7 @@
                   alt="..."
                 />
                 <div class="carouselContent">
-                  <span>Baishnavie Travels</span>
+                  <!-- <span>Baishnavie Travels</span> -->
                   <h2>comfortable rides, unforgettable memories</h2>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -145,7 +168,7 @@
                   alt="..."
                 />
                 <div class="carouselContent">
-                  <span>Baishnavie Travels</span>
+                  <!-- <span>Baishnavie Travels</span> -->
                   <h2>Your journey our promise</h2>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -208,7 +231,9 @@
               <div class="cardsContent">
                 <h4>Adventure</h4>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button>Enquiry Now</button>
+                <button>
+                  <a href="contact.html" class="text-black">Enquiry Now</a>
+                </button>
               </div>
             </div>
           </div>
@@ -223,7 +248,9 @@
               <div class="cardsContent">
                 <h4>Safari</h4>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button>Enquiry Now</button>
+                <button>
+                  <a href="contact.html" class="text-black">Enquiry Now</a>
+                </button>
               </div>
             </div>
           </div>
@@ -238,7 +265,9 @@
               <div class="cardsContent">
                 <h4>Trekking</h4>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button>Enquiry Now</button>
+                <button>
+                  <a href="contact.html" class="text-black">Enquiry Now</a>
+                </button>
               </div>
             </div>
           </div>
@@ -253,7 +282,9 @@
               <div class="cardsContent">
                 <h4>Camping</h4>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button>Enquiry Now</button>
+                <button>
+                  <a href="contact.html" class="text-black">Enquiry Now</a>
+                </button>
               </div>
             </div>
           </div>
@@ -268,7 +299,9 @@
               <div class="cardsContent">
                 <h4>Sightseeing</h4>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button>Enquiry Now</button>
+                <button>
+                  <a href="contact.html" class="text-black">Enquiry Now</a>
+                </button>
               </div>
             </div>
           </div>
@@ -283,7 +316,9 @@
               <div class="cardsContent">
                 <h4>Rafting</h4>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button>Enquiry Now</button>
+                <button>
+                  <a href="contact.html" class="text-black">Enquiry Now</a>
+                </button>
               </div>
             </div>
           </div>
@@ -298,35 +333,65 @@
         </div>
 
         <div class="owl-carousel owl-theme">
-          <div class="item">
-            <img
-              src="https://imgs.search.brave.com/Q1f4X82oi1CTIhkCNbm-V4yBfZtptszzcy_iowEVRnI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMudHJhdmVsdHJp/YW5nbGUuY29tL2Js/b2cvd3AtY29udGVu/dC91cGxvYWRzLzIw/MTgvMDIvVG9ja2xh/aS1UZWEtUmVzZWFy/Y2gtQ2VudHJlLmpw/Zw"
-              alt=""
-            />
+          <div class="item exploreNortheast">
+            <a href="destinations.html"
+              ><img
+                src="https://imgs.search.brave.com/Q1f4X82oi1CTIhkCNbm-V4yBfZtptszzcy_iowEVRnI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMudHJhdmVsdHJp/YW5nbGUuY29tL2Js/b2cvd3AtY29udGVu/dC91cGxvYWRzLzIw/MTgvMDIvVG9ja2xh/aS1UZWEtUmVzZWFy/Y2gtQ2VudHJlLmpw/Zw"
+                alt=""
+            /></a>
+            <div class="exploreNortheastName">
+              Assam <i class="ri-map-pin-line"></i>
+            </div>
           </div>
-          <div class="item">
-            <img
-              src="https://imgs.search.brave.com/fX3hIYWepC_4HGRMor6CKoDMt2AXVGD-0fcZjJcnXGA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMudHJhdmVsdHJp/YW5nbGUuY29tL2Js/b2cvd3AtY29udGVu/dC91cGxvYWRzLzIw/MTgvMDQvT3Jhbmct/TmF0aW9uYWwtUGFy/ay1hc3NhbS5qcGc"
-              alt=""
-            />
+          <div class="item exploreNortheast">
+            <a href="destinations.html"
+              ><img
+                src="https://images.unsplash.com/photo-1626761627604-f27d98885f4b?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YXJ1bmFjaGFsJTIwUHJhZGVzaHxlbnwwfHwwfHx8MA%3D%3D"
+                alt=""
+            /></a>
+            <div class="exploreNortheastName">
+              Arunachal Pradesh <i class="ri-map-pin-line"></i>
+            </div>
           </div>
-          <div class="item">
-            <img
-              src="https://imgs.search.brave.com/-fKVnXhcfvrK-XXGAuq9dXc6fa0Q4xP_gleT63SUuyI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YTIudGhyaWxsb3Bo/aWxpYS5jb20vaW1h/Z2VzL3Bob3Rvcy8w/MDAvMTc4LzQ4MS9v/cmlnaW5hbC8xNTcz/NTU3MjE3X25hZ2Fs/YW5kLmpwZz9ncmF2/aXR5PWNlbnRlciZ3/aWR0aD03NTImaGVp/Z2h0PTQ1MCZjcm9w/PWZpbGwmcXVhbGl0/eT1hdXRvJmZldGNo/X2Zvcm1hdD1hdXRv/JmZsYWdzPXN0cmlw/X3Byb2ZpbGUmZm9y/bWF0PWpwZyZzaWdu/X3VybD10cnVl"
-              alt=""
-            />
+          <div class="item exploreNortheast">
+            <a href="destinations.html"
+              ><img
+                src="https://images.unsplash.com/photo-1552978534-9d01e1f91517?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVnaGFsYXlhfGVufDB8fDB8fHww"
+                alt=""
+            /></a>
+            <div class="exploreNortheastName">
+              Meghalaya <i class="ri-map-pin-line"></i>
+            </div>
           </div>
-          <div class="item">
-            <img
-              src="https://imgs.search.brave.com/7mjRGZDUNzNzb5Q2mHaxTNkc-1GMvJs7fxeN-rCOXE8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudHJhdmVsYW5k/bGVpc3VyZWFzaWEu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy9z/aXRlcy8yLzIwMjQv/MTEvMDUxNjI4MzIv/TmFyYXlhbnBhbC1W/aXNobnUtTWFuZGly/LUNoaGF0dGlzZ2Fy/aC5qcGc"
-              alt=""
-            />
+          <div class="item exploreNortheast">
+            <a href="destinations.html"
+              ><img
+                src="https://images.unsplash.com/photo-1587635861480-414767bd0198?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWFuaXB1cnxlbnwwfHwwfHx8MA%3D%3D"
+                alt=""
+            /></a>
+            <div class="exploreNortheastName">
+              Manipur <i class="ri-map-pin-line"></i>
+            </div>
           </div>
-          <div class="item">
-            <img
-              src="https://imgs.search.brave.com/HNSiLDurZu-OMXjH2Fi2RtnADCMiPkGHmhG1f9yzkfc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vd3d3LnR1/c2t0cmF2ZWwuY29t/L2Jsb2cvd3AtY29u/dGVudC91cGxvYWRz/LzIwMjAvMDkvTm9y/dGgtQ2FjaGFyLUhp/bGxzLUFzc2FtLmpw/Zz9yZXNpemU9ODAw/LDQ1MCZzc2w9MQ"
-              alt=""
-            />
+          <div class="item exploreNortheast">
+            <a href="destinations.html"
+              ><img
+                src="https://imgs.search.brave.com/HN4GlkpHlp-gvp30CoEketPPXPimHrh2qvtKRWdI_Lw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMubmljZXBhZ2Vj/ZG4uY29tL2UzMjJk/MWI2LzU0NzYyMjQv/aW1hZ2VzL3N0b2Nr/LXBob3RvLWluY3Jl/ZGlibGUtbm9ydGgt/ZWFzdC1zYWloYS1t/aXpvcmFtLWluZGlh/LTkyNjk0Mzk3Mi5q/cGc"
+                alt=""
+            /></a>
+            <div class="exploreNortheastName">
+              Mizoram <i class="ri-map-pin-line"></i>
+            </div>
+          </div>
+          <div class="item exploreNortheast">
+            <a href="destinations.html"
+              ><img
+                src="https://images.unsplash.com/photo-1700042629181-e6b100894f6f?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG5hZ2FsYW5kfGVufDB8fDB8fHww"
+                alt=""
+            /></a>
+            <div class="exploreNortheastName">
+              Nagaland <i class="ri-map-pin-line"></i>
+            </div>
           </div>
         </div>
       </div>
@@ -342,72 +407,72 @@
           <div class="gallery-grid">
             <div class="ovflow">
               <img
-                src="https://plus.unsplash.com/premium_photo-1661870730088-f9ab6784fc67?w=900"
+                src="https://images.unsplash.com/photo-1622308644420-b20142dc993c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZGFyamVlbGluZ3xlbnwwfHwwfHx8MA%3D%3D"
                 alt=""
               />
-              <a href="">
+              <a href="destinations.html">
                 <div class="ovflowContent">
-                  <h3>Place</h3>
+                  <h3>Darjeeling</h3>
                   <i class="ri-arrow-right-up-line"></i>
                 </div>
               </a>
             </div>
             <div class="ovflow col-span-2">
               <img
-                src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8b3V0ZG9vcnxlbnwwfHwwfHx8MA%3D%3D"
+                src="https://images.unsplash.com/photo-1632407575668-c956f851c3d7?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHNpa2tpbXxlbnwwfHwwfHx8MA%3D%3D"
                 alt=""
               />
-              <a href="">
+              <a href="destinations.html">
                 <div class="ovflowContent">
-                  <h3>Place</h3>
+                  <h3>Sikkim</h3>
                   <i class="ri-arrow-right-up-line"></i>
                 </div>
               </a>
             </div>
             <div class="ovflow">
               <img
-                src="https://images.unsplash.com/photo-1445108771252-d1cc31a02a3c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8b3V0ZG9vcnxlbnwwfHwwfHx8MA%3D%3D"
+                src="https://images.unsplash.com/photo-1598091383021-15ddea10925d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2FzaG1pcnxlbnwwfHwwfHx8MA%3D%3D"
                 alt=""
               />
-              <a href="">
+              <a href="destinations.html">
                 <div class="ovflowContent">
-                  <h3>Place</h3>
+                  <h3>Kashmir</h3>
                   <i class="ri-arrow-right-up-line"></i>
                 </div>
               </a>
             </div>
             <div class="ovflow col-span-2">
               <img
-                src="https://plus.unsplash.com/premium_photo-1661964149725-fbf14eabd38c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGVzdGluYXRpb258ZW58MHx8MHx8fDA%3D"
+                src="https://plus.unsplash.com/premium_photo-1691735665916-cf31006dffe3?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bmVwYWx8ZW58MHx8MHx8fDA%3D"
                 alt=""
               />
-              <a href="">
+              <a href="destinations.html">
                 <div class="ovflowContent">
-                  <h3>Place</h3>
+                  <h3>Nepal</h3>
                   <i class="ri-arrow-right-up-line"></i>
                 </div>
               </a>
             </div>
             <div class="ovflow">
               <img
-                src="https://images.unsplash.com/photo-1682687981630-cefe9cd73072?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGRlc3RpbmF0aW9ufGVufDB8fDB8fHww"
+                src="https://images.unsplash.com/photo-1712388430474-ace0c16051e2?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWFuYWxpfGVufDB8fDB8fHww"
                 alt=""
               />
-              <a href="">
+              <a href="destinations.html">
                 <div class="ovflowContent">
-                  <h3>Place</h3>
+                  <h3>Manali</h3>
                   <i class="ri-arrow-right-up-line"></i>
                 </div>
               </a>
             </div>
             <div class="ovflow row-span-2">
               <img
-                src="https://images.unsplash.com/photo-1682685797406-97f364419b4a?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZGVzdGluYXRpb258ZW58MHx8MHx8fDA%3D"
+                src="https://images.unsplash.com/photo-1558431382-27e303142255?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8a29sa2F0YXxlbnwwfHwwfHx8MA%3D%3D"
                 alt=""
               />
-              <a href="">
+              <a href="destinations.html">
                 <div class="ovflowContent">
-                  <h3>Place</h3>
+                  <h3>Kolkata</h3>
                   <i class="ri-arrow-right-up-line"></i>
                 </div>
               </a>
@@ -460,7 +525,7 @@
           <h3>Explore Our Domestic Tour Packages!</h3>
         </div>
 
-        <div class="owl-carousel owl-theme packagesCarousel">
+        <!-- <div class="owl-carousel owl-theme packagesCarousel">
           <div class="item packagesItem">
             <div class="packagesImg">
               <img
@@ -565,6 +630,264 @@
               </div>
             </a>
           </div>
+        </div> -->
+
+        <!-- Slider main container -->
+        <div class="swiper packageSwiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper py-3">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="package">
+                <div class="packageImg">
+                  <img
+                    class="img-fluid"
+                    src="https://images.unsplash.com/photo-1659951345409-b517e77edbc9?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHVyaSUyMGtvbGthdGF8ZW58MHx8MHx8fDA%3D"
+                    alt=""
+                  />
+                </div>
+                <div class="packageContent">
+                  <h5 class="tourName fw-bold text-success">
+                    Puri Kolkata Tour
+                  </h5>
+                  <p class="tourSchedule">09 Nights / 10 days</p>
+                  <p class="tourPlace">
+                    <i class="ri-map-pin-line"></i>Puri > Kolkata
+                  </p>
+                  <div
+                    class="includesItems d-flex justify-content-center align-items-center gap-3"
+                  >
+                    <div>
+                      <i class="ri-hotel-line"></i>
+                      <p>Hotel</p>
+                    </div>
+                    <div>
+                      <i class="ri-restaurant-line"></i>
+                      <p>Meals</p>
+                    </div>
+                    <div>
+                      <i class="ri-glasses-line"></i>
+                      <p>SightSeeing</p>
+                    </div>
+                    <div class="includeText">Includes</div>
+                  </div>
+                  <div
+                    class="contactLinks d-flex justify-content-center align-items-center gap-3"
+                  >
+                    <a href="tourPackage.html" class="view"
+                      >View Tour <i class="ri-arrow-right-up-line"></i
+                    ></a>
+                    <div class="whatsappLink">
+                      <i class="ri-whatsapp-fill"></i>
+                    </div>
+                    <a href="tel:+917002525098"
+                      ><i class="ri-phone-fill"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="package">
+                <div class="packageImg">
+                  <img
+                    class="img-fluid"
+                    src="https://plus.unsplash.com/premium_photo-1697730484307-a05ad3449015?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZGFyamVlbGluZ3xlbnwwfHwwfHx8MA%3D%3D"
+                    alt=""
+                  />
+                </div>
+                <div class="packageContent">
+                  <h5 class="tourName fw-bold text-success">
+                    Darjeeling Gangtok lachung Pelling tour
+                  </h5>
+                  <p class="tourSchedule">09 Nights / 10 days</p>
+                  <p class="tourPlace">
+                    <i class="ri-map-pin-line"></i>Puri > Kolkata
+                  </p>
+                  <div
+                    class="includesItems d-flex justify-content-center align-items-center gap-3"
+                  >
+                    <div>
+                      <i class="ri-hotel-line"></i>
+                      <p>Hotel</p>
+                    </div>
+                    <div>
+                      <i class="ri-restaurant-line"></i>
+                      <p>Meals</p>
+                    </div>
+                    <div>
+                      <i class="ri-glasses-line"></i>
+                      <p>SightSeeing</p>
+                    </div>
+                    <div class="includeText">Includes</div>
+                  </div>
+                  <div
+                    class="contactLinks d-flex justify-content-center align-items-center gap-3"
+                  >
+                    <a href="tourPackage.html" class="view"
+                      >View Tour <i class="ri-arrow-right-up-line"></i
+                    ></a>
+                    <div class="whatsappLink">
+                      <i class="ri-whatsapp-fill"></i>
+                    </div>
+                    <a href="tel:+917002525098"
+                      ><i class="ri-phone-fill"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="package">
+                <div class="packageImg">
+                  <img
+                    class="img-fluid"
+                    src="https://images.unsplash.com/photo-1580830500974-b855c09ffa09?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bm9ydGhlYXN0fGVufDB8fDB8fHww"
+                    alt=""
+                  />
+                </div>
+                <div class="packageContent">
+                  <h5 class="tourName fw-bold text-success">
+                    Seven Sister Tour
+                  </h5>
+                  <p class="tourSchedule">09 Nights / 10 days</p>
+                  <p class="tourPlace">
+                    <i class="ri-map-pin-line"></i>Puri > Kolkata
+                  </p>
+                  <div
+                    class="includesItems d-flex justify-content-center align-items-center gap-3"
+                  >
+                    <div>
+                      <i class="ri-hotel-line"></i>
+                      <p>Hotel</p>
+                    </div>
+                    <div>
+                      <i class="ri-restaurant-line"></i>
+                      <p>Meals</p>
+                    </div>
+                    <div>
+                      <i class="ri-glasses-line"></i>
+                      <p>SightSeeing</p>
+                    </div>
+                    <div class="includeText">Includes</div>
+                  </div>
+                  <div
+                    class="contactLinks d-flex justify-content-center align-items-center gap-3"
+                  >
+                    <a href="tourPackage.html" class="view"
+                      >View Tour <i class="ri-arrow-right-up-line"></i
+                    ></a>
+                    <div class="whatsappLink">
+                      <i class="ri-whatsapp-fill"></i>
+                    </div>
+                    <a href="tel:+917002525098"
+                      ><i class="ri-phone-fill"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="package">
+                <div class="packageImg">
+                  <img
+                    class="img-fluid"
+                    src="https://images.unsplash.com/photo-1668437824006-1be44600774b?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YXJ1bmFjaGFsfGVufDB8fDB8fHww"
+                    alt=""
+                  />
+                </div>
+                <div class="packageContent">
+                  <h5 class="tourName fw-bold text-success">
+                    Unexplored Arunachal
+                  </h5>
+                  <p class="tourSchedule">09 Nights / 10 days</p>
+                  <p class="tourPlace">
+                    <i class="ri-map-pin-line"></i>Puri > Kolkata
+                  </p>
+                  <div
+                    class="includesItems d-flex justify-content-center align-items-center gap-3"
+                  >
+                    <div>
+                      <i class="ri-hotel-line"></i>
+                      <p>Hotel</p>
+                    </div>
+                    <div>
+                      <i class="ri-restaurant-line"></i>
+                      <p>Meals</p>
+                    </div>
+                    <div>
+                      <i class="ri-glasses-line"></i>
+                      <p>SightSeeing</p>
+                    </div>
+                    <div class="includeText">Includes</div>
+                  </div>
+                  <div
+                    class="contactLinks d-flex justify-content-center align-items-center gap-3"
+                  >
+                    <a href="tourPackage.html" class="view"
+                      >View Tour <i class="ri-arrow-right-up-line"></i
+                    ></a>
+                    <div class="whatsappLink">
+                      <i class="ri-whatsapp-fill"></i>
+                    </div>
+                    <a href="tel:+917002525098"
+                      ><i class="ri-phone-fill"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="package">
+                <div class="packageImg">
+                  <img
+                    class="img-fluid"
+                    src="https://images.unsplash.com/photo-1552978534-9d01e1f91517?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVnaGFsYXlhfGVufDB8fDB8fHww"
+                    alt=""
+                  />
+                </div>
+                <div class="packageContent">
+                  <h5 class="tourName fw-bold text-success">
+                    Arunachal Meghalaya Tour
+                  </h5>
+                  <p class="tourSchedule">09 Nights / 10 days</p>
+                  <p class="tourPlace">
+                    <i class="ri-map-pin-line"></i>Puri > Kolkata
+                  </p>
+                  <div
+                    class="includesItems d-flex justify-content-center align-items-center gap-3"
+                  >
+                    <div>
+                      <i class="ri-hotel-line"></i>
+                      <p>Hotel</p>
+                    </div>
+                    <div>
+                      <i class="ri-restaurant-line"></i>
+                      <p>Meals</p>
+                    </div>
+                    <div>
+                      <i class="ri-glasses-line"></i>
+                      <p>SightSeeing</p>
+                    </div>
+                    <div class="includeText">Includes</div>
+                  </div>
+                  <div
+                    class="contactLinks d-flex justify-content-center align-items-center gap-3"
+                  >
+                    <a href="tourPackage.html" class="view"
+                      >View Tour <i class="ri-arrow-right-up-line"></i
+                    ></a>
+                    <div class="whatsappLink">
+                      <i class="ri-whatsapp-fill"></i>
+                    </div>
+                    <a href="tel:+917002525098"
+                      ><i class="ri-phone-fill"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -609,9 +932,7 @@
             <div class="col-lg-6">
               <div class="aboutUsContnt">
                 <span>Why Choose Us</span>
-                <h3>
-                  Choose Ruchika Tour and Travels for Unforgettable Adventures!
-                </h3>
+                <h3>Choose Baishnavie Travels for Unforgettable Adventures!</h3>
                 <div class="points">
                   <div class="point">
                     <i class="ri-number-1"></i>
@@ -693,7 +1014,7 @@
           </p>
         </div>
 
-        <div class="owl-carousel owl-theme">
+        <!-- <div class="owl-carousel owl-theme">
           <div class="item">
             <img
               src="https://plus.unsplash.com/premium_photo-1661962707694-3420cb435e03?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGthc2htaXJ8ZW58MHx8MHx8fDA%3D"
@@ -724,6 +1045,68 @@
               alt=""
             />
           </div>
+        </div> -->
+        <div class="owl-carousel owl-theme">
+          <div class="item exploreNortheast">
+            <a href="destinations.html"
+              ><img
+                src="https://images.unsplash.com/photo-1612438214708-f428a707dd4e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fFV0dGFyYWtoYW5kfGVufDB8fDB8fHww"
+                alt=""
+            /></a>
+            <div class="exploreNortheastName">
+              Uttarakhand <i class="ri-map-pin-line"></i>
+            </div>
+          </div>
+          <div class="item exploreNortheast">
+            <a href="destinations.html"
+              ><img
+                src="https://plus.unsplash.com/premium_photo-1661905692737-e075ebc940e8?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGhpbWFjaGFsJTIwcHJhZGVzaHxlbnwwfHwwfHx8MA%3D%3D"
+                alt=""
+            /></a>
+            <div class="exploreNortheastName">
+              Himachal Pradesh <i class="ri-map-pin-line"></i>
+            </div>
+          </div>
+          <div class="item exploreNortheast">
+            <a href="destinations.html"
+              ><img
+                src="https://plus.unsplash.com/premium_photo-1691735665916-cf31006dffe3?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bmVwYWx8ZW58MHx8MHx8fDA%3D"
+                alt=""
+            /></a>
+            <div class="exploreNortheastName">
+              Nepal <i class="ri-map-pin-line"></i>
+            </div>
+          </div>
+          <div class="item exploreNortheast">
+            <a href="destinations.html"
+              ><img
+                src="https://images.unsplash.com/photo-1701407369440-b8c0232707fb?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dHJpcHVyYXxlbnwwfHwwfHx8MA%3D%3D"
+                alt=""
+            /></a>
+            <div class="exploreNortheastName">
+              Tripura <i class="ri-map-pin-line"></i>
+            </div>
+          </div>
+          <div class="item exploreNortheast">
+            <a href="destinations.html"
+              ><img
+                src="https://imgs.search.brave.com/HN4GlkpHlp-gvp30CoEketPPXPimHrh2qvtKRWdI_Lw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMubmljZXBhZ2Vj/ZG4uY29tL2UzMjJk/MWI2LzU0NzYyMjQv/aW1hZ2VzL3N0b2Nr/LXBob3RvLWluY3Jl/ZGlibGUtbm9ydGgt/ZWFzdC1zYWloYS1t/aXpvcmFtLWluZGlh/LTkyNjk0Mzk3Mi5q/cGc"
+                alt=""
+            /></a>
+            <div class="exploreNortheastName">
+              Mizoram <i class="ri-map-pin-line"></i>
+            </div>
+          </div>
+          <div class="item exploreNortheast">
+            <a href="destinations.html"
+              ><img
+                src="https://images.unsplash.com/photo-1700042629181-e6b100894f6f?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG5hZ2FsYW5kfGVufDB8fDB8fHww"
+                alt=""
+            /></a>
+            <div class="exploreNortheastName">
+              Nagaland <i class="ri-map-pin-line"></i>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -736,20 +1119,23 @@
               <div class="aboutUsContnt">
                 <span>Testimonial</span>
                 <h3>Memorable Journeys, Happy Customers!</h3>
-                <img
-                  id="customerId"
-                  src="https://plus.unsplash.com/premium_photo-1671656349322-41de944d259b?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFjZXxlbnwwfHwwfHx8MA%3D%3D"
-                  alt=""
-                />
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-                  reiciendis iste debitis corrupti voluptatibus assumenda natus
-                  placeat tempora, repellendus, vel expedita distinctio neque
-                  tenetur quibusdam doloremque? Quaerat iste magni pariatur.
-                  Impedit libero, consequuntur excepturi commodi minima eius
-                  pariatur nesciunt perspiciatis dolorum labore tenetur illo.
-                  Sapiente molestias fuga eligendi officiis laborum
-                </p>
+                <div class="customerReviewSlide">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Assumenda sunt aliquid aliquam numquam sit amet alias cum
+                    nihil id officiis. Minus reprehenderit odio asperiores
+                    labore obcaecati. Animi illum nobis impedit veritatis autem,
+                    ipsam quibusdam fugiat eligendi consequatur nam consectetur,
+                    consequuntur nostrum libero accusantium non ab optio
+                    mollitia distinctio et eveniet porro. Maxime unde adipisci
+                    neque quam animi impedit nihil doloremque, repellendus odit
+                    numquam quas praesentium. Sit iure, ullam, quod quasi, iste
+                    voluptatem nobis cumque exercitationem consequuntur sunt sed
+                    iusto minima impedit dignissimos qui amet ut itaque
+                    inventore asperiores optio quam laboriosam natus repellendus
+                    officiis.
+                  </p>
+                </div>
               </div>
             </div>
             <div class="col-lg-6">
@@ -763,7 +1149,8 @@
       <div class="container sectionPadding">
         <div class="row">
           <div class="col-lg-4 col-sm-12 mb-5">
-            <h5>About Us</h5>
+            <!-- <h5>About Us</h5> -->
+            <img src="./baishnavieLogo.png" alt="" id="mainLogo" />
             <p>
               Since 2009, Baishnavie Travels has provided seamless travel
               experiences, especially across Northeast India and the rest of
@@ -775,32 +1162,41 @@
             <h5>Quick Links</h5>
             <div class="quickLinks">
               <a href="#"><i class="ri-arrow-right-line"></i> Home</a>
-              <a href="#"><i class="ri-arrow-right-line"></i> About Us</a>
-              <a href="#"
+              <a href="about.html"
+                ><i class="ri-arrow-right-line"></i> About Us</a
+              >
+              <a href="services.html"
                 ><i class="ri-arrow-right-line"></i> Car and Service</a
               >
-              <a href="#"><i class="ri-arrow-right-line"></i> Destinations</a>
-              <a href="#"><i class="ri-arrow-right-line"></i> Tour Packages</a>
-              <a href="#"><i class="ri-arrow-right-line"></i> Contact Us</a>
+              <a href="destinations.html"
+                ><i class="ri-arrow-right-line"></i> Destinations</a
+              >
+              <a href="tourPackage.html"
+                ><i class="ri-arrow-right-line"></i> Tour Packages</a
+              >
+              <a href="contact.html"
+                ><i class="ri-arrow-right-line"></i> Contact Us</a
+              >
             </div>
           </div>
           <div class="col-lg-4 col-sm-12">
             <h5>Contact Us</h5>
             <div class="quickLinks">
               <a href="#"
-                ><i class="ri-map-pin-line"></i> PKD COURT, M. E ROAD, PALTAN
-                BAAZAR-781008</a
-              >
-              <a href="#"><i class="ri-mail-line"></i> Test@gmail.com</a>
-              <a href="#"
-                ><i class="ri-phone-line"></i> Phone number: +91-4545454545</a
+                ><i class="ri-map-pin-line"></i> NOONMATI, K.B CHOWK,
+                PURNANAGAR</a
               >
               <a href="#"
-                ><i class="ri-phone-line"></i> For Bookings: +914545454545
-                /+91-7878787878</a
+                ><i class="ri-mail-line"></i> baishnavietravels@gmail.com</a
               >
-              <a href="#"
-                ><i class="ri-phone-line"></i> Customer Care: 0361 273 3522</a
+              <a href="tel:+91-8134961443"
+                ><i class="ri-phone-line"></i> Phone number: +91-8134961443
+              </a>
+              <a href="tel:++91-8133896964"
+                ><i class="ri-phone-line"></i> Phone number: +91-8133896964
+              </a>
+              <a href="tel:03614059649"
+                ><i class="ri-phone-line"></i> Customer Care: 03614059649</a
               >
             </div>
           </div>
@@ -820,6 +1216,61 @@
       integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
       crossorigin="anonymous"
     ></script>
+    <!-- Swiper JS -->
+    <script type="module">
+      import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+
+      const swiper = new Swiper(".packageSwiper", {
+        speed: 2000,
+        loop: true,
+        autoplay: {
+          delay: 2000,
+        },
+
+        fadeEffect: {
+          crossFade: true,
+        },
+
+        // If we need pagination
+        // pagination: {
+        //   el: ".swiper-pagination",
+        // },
+
+        // Navigation arrows
+        // navigation: {
+        //   nextEl: ".swiper-button-next",
+        //   prevEl: ".swiper-button-prev",
+        // },
+
+        // And if we need scrollbar
+        // scrollbar: {
+        //   el: ".swiper-scrollbar",
+        // },
+
+        // Default parameters
+        slidesPerView: 1,
+        spaceBetween: 10,
+        // Responsive breakpoints
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          // when window width is >= 480px
+          480: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          // when window width is >= 640px
+          640: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+        },
+      });
+    </script>
+
     <script src="script.js"></script>
   </body>
 </html>

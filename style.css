@@ -8,6 +8,11 @@
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
 }
+#mainLogo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
 #navBar {
   background-color: transparent;
   transition: top 0.5s ease;
@@ -200,6 +205,19 @@ span {
   object-fit: cover;
   border-radius: 40px;
 }
+.exploreNortheast {
+  position: relative;
+}
+.exploreNortheastName {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  padding: 15px 30px;
+  background-color: rgb(22, 3, 3);
+  color: white;
+  border-radius: 10px;
+  cursor: none;
+}
 /*  */
 .gallery-grid {
   display: grid;
@@ -263,11 +281,11 @@ span {
 .aboutUsImg {
   width: 100%;
   height: 70vh;
-  background-image: url("https://plus.unsplash.com/premium_photo-1676139860076-bc568722ff75?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGxhY2V8ZW58MHx8MHx8fDA%3D");
-  background-size: contain;
+  background-image: url("https://images.unsplash.com/photo-1576557686977-eda3a3bb1ea2?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGRhcmplZWxpbmd8ZW58MHx8MHx8fDA%3D");
+  background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 .packagesCarousel .item {
   width: 100%;
@@ -319,6 +337,74 @@ span {
   background-color: black;
   color: #fff;
   transition: 0.7s;
+}
+
+.swiper {
+  /* width: 600px; */
+  width: 100%;
+  /* height: 500px; */
+}
+.swiper-slide {
+  /* width: 100%; */
+  height: 100%;
+  /* background-color: red; */
+}
+.swiper-slide .package {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 20px;
+}
+.packageImg {
+  height: 300px;
+}
+.packageImg img {
+  border-radius: 20px;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.packageContent {
+  padding: 20px;
+}
+.includesItems {
+  border: 1px solid black;
+  position: relative;
+  padding: 5px 0;
+}
+.includesItems div i {
+  font-size: 24px;
+  color: royalblue;
+}
+.includesItems div p {
+  font-size: 16px;
+}
+
+.includeText {
+  position: absolute;
+  left: 0;
+  top: -35px;
+  background-color: pink;
+  padding: 5px;
+}
+.contactLinks {
+  padding: 10px 0;
+}
+.contactLinks .whatsappLink i {
+  font-size: 30px;
+  color: green;
+  cursor: pointer;
+}
+.contactLinks .ri-phone-fill {
+  font-size: 30px;
+  color: royalblue;
+}
+.contactLinks .view {
+  padding: 9px 15px;
+  background-color: rgb(9, 142, 53);
+  border-radius: 10px;
+  color: #fff;
 }
 #whatapp {
   background-color: rgb(5, 119, 5);
@@ -455,7 +541,7 @@ footer p {
   h3 {
     font-size: 35px;
   }
-  p {
+  .carouselContent p {
     max-width: 250px;
     font-size: 4vw;
   }
@@ -515,10 +601,275 @@ footer p {
     transform: translateX(0);
     transition: 0.5s;
   }
-}
-
-@media (min-width: 576px) {
   .container {
     max-width: none;
   }
+}
+
+.aboutImg {
+  width: 100%;
+  height: 50vh;
+  background-image: url("https://plus.unsplash.com/premium_photo-1672116452571-896980a801c8?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2l0eXxlbnwwfHwwfHx8MA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: #fff;
+}
+.serviceImg {
+  width: 100%;
+  height: 50vh;
+  background-image: url("https://plus.unsplash.com/premium_photo-1671734045770-4b9e1a5e53a0?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bG9uZG9ufGVufDB8fDB8fHww");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: #fff;
+}
+
+/* Service Section start */
+.serviceCard {
+  border: 1px solid rgb(175, 172, 172);
+  /* height: 450px; */
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.serviceCardImg {
+  height: 300px;
+  overflow: hidden;
+}
+.serviceCardImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+.serviceCard:hover .serviceCardImg img {
+  scale: 1.15;
+  transition: 0.5s;
+}
+.serviceCardText {
+  padding: 20px;
+  text-align: center;
+}
+.serviceCardText button {
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #c4bfbf;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.serviceCardText button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #ff6b03;
+  transition: 0.5s;
+}
+.serviceCardText button:hover::before {
+  left: 0;
+  color: rgb(31, 63, 243);
+  transition: 0.5s;
+  z-index: -1;
+}
+.serviceCardText button:hover {
+  color: #fff;
+}
+.whatsAppLogo {
+  text-decoration: none;
+  padding: 5px 10px;
+  background-color: green;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  cursor: pointer;
+}
+.whatsAppLogo i {
+  font-size: 25px;
+  color: rgb(220, 230, 220);
+}
+
+.vehicleServiceIcon {
+  background-color: rgba(224, 193, 127, 0.739);
+}
+.vehicleServiceIcon i {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+
+.destinationContent {
+  height: 500px;
+}
+@media (max-width: 974px) {
+  .destinationContent {
+    height: auto;
+  }
+}
+.destinationImg {
+  height: 100%;
+  position: relative;
+}
+.destinationImg img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.state {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  background-color: #ff6b03;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 26px;
+  border-radius: 10px;
+}
+.destinationContent button {
+  background-color: #ff6b03;
+  color: white;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+.destinationContent p {
+  text-align: justify;
+}
+.destinationContent button::before {
+  content: "";
+  position: absolute;
+  left: -100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.868);
+  z-index: -1;
+}
+.destinationContent button:hover:before {
+  left: 0;
+  transition: 0.5s;
+}
+.destinationContent button:hover {
+  color: white;
+  z-index: 1;
+}
+
+.TourPackageImg {
+  width: 100%;
+  height: 50vh;
+  background-image: url("https://images.unsplash.com/photo-1569949381669-ecf31ae8e613?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dG91cnxlbnwwfHwwfHx8MA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: #fff;
+  position: relative;
+}
+.TourPackageImg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0000004f;
+}
+.TourPackageImg h2 {
+  z-index: 3;
+}
+.tourPack {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  text-align: center;
+  border-radius: 20px;
+}
+.tourPack .packageImg {
+  height: 300px;
+}
+.tourPack .packageImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contactCards {
+  /* border: 1px solid black; */
+  height: 250px;
+  padding: 30px 10px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.contactCards i {
+  color: royalblue;
+}
+.contactCards h6 {
+  font-weight: bold;
+  font-size: 20px;
+}
+.contactCards p,
+a {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.baishnavieForm form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.baishnavieForm form div {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+.baishnavieForm input {
+  width: 100%;
+  padding: 15px 10px;
+  border-radius: 20px;
+  font-size: 20px;
+  border: 1px solid #000;
+  outline: none;
+  /* background-color: black; */
+}
+.baishnavieForm textarea {
+  margin-top: 30px;
+  width: 100%;
+  height: 200px;
+  resize: none;
+  padding: 15px 10px;
+  font-size: 20px;
+  border: 1px solid #000;
+  outline: none;
+  border-radius: 20px;
+}
+.baishnavieForm button {
+  margin-top: 30px;
+  background-color: #ff6b03;
+  color: #fff;
+  font-size: 20px;
+  transition: 0.5s;
+  border-radius: 20px;
+}
+.baishnavieForm button:hover {
+  background-color: #ff6c03e1;
+  transition: 0.5s;
+}
+.contactImg {
+  width: 100%;
+  height: 500px;
+  background-color: red;
+}
+.contactImg img {
+  height: 100%;
 }
