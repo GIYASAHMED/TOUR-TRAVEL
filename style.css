@@ -444,7 +444,6 @@ span {
 }
 .point {
   display: flex;
-  /* justify-content: space-between; */
   align-items: flex-start;
 }
 .point i {
@@ -463,7 +462,6 @@ span {
 
 #why {
   width: 100%;
-  /* height: 60vh; */
 }
 .whyImg {
   width: 100%;
@@ -488,22 +486,29 @@ span {
   justify-content: center;
   align-items: center;
   color: #fff;
-  order: 0;
 }
 .discoverContent {
   background-color: #0000009b;
   text-align: center;
   padding: 20px 40px;
-  order: 1;
+}
+.happyCustomer {
+  margin-top: 30px;
 }
 
-.happyCustomer {
+.happyCustomer img {
   width: 100%;
-  height: 60vh;
-  background-image: url("./testi.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rvcontent {
+  box-shadow: rgba(118, 114, 114, 0.2) 0px 2px 8px 0px;
+  padding: 20px 20px;
+}
+.rvcontent p {
+  font-size: 16px;
+  margin-top: 10px;
 }
 .customerReviewSlide {
   height: fit-content;
@@ -522,14 +527,7 @@ span {
   font-size: 23px;
   font-weight: bold;
 }
-.rvcontent {
-  box-shadow: rgba(118, 114, 114, 0.2) 0px 2px 8px 0px;
-  padding: 20px 20px;
-}
-.rvcontent p {
-  font-size: 16px;
-  margin-top: 10px;
-}
+
 #customerId {
   width: 100px;
   height: 100px;
