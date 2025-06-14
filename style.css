@@ -56,13 +56,14 @@ h2 {
   text-transform: capitalize;
 }
 h3 {
-  font-size: 45px;
+  font-size: 40px;
+  font-weight: bold;
 }
 h4 {
   font-size: 50px;
 }
 p {
-  font-size: 20px;
+  font-size: 17px;
 }
 span {
   font-size: 35px;
@@ -287,9 +288,9 @@ span {
 .aboutUsImg {
   width: 100%;
   height: 70vh;
-  background-image: url("https://images.unsplash.com/photo-1576557686977-eda3a3bb1ea2?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGRhcmplZWxpbmd8ZW58MHx8MHx8fDA%3D");
+  background-image: url("https://imgs.search.brave.com/IWRkoEUQXcF9g5GPEJqQjXFS2xnIn5OwU_x622A195A/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMudHJhdmVsdHJp/YW5nbGUuY29tL2Js/b2cvd3AtY29udGVu/dC91cGxvYWRzLzIw/MTkvMTIvVW1hbmFu/ZGEtVGVtcGxlLWd1/d2FoYXRpMS5qcGc");
   background-size: cover;
-  background-position: left;
+  background-position: center;
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
 }
@@ -323,7 +324,7 @@ span {
 }
 
 .packagedContent h5 {
-  font-size: 35px;
+  font-size: 30px;
   text-transform: capitalize;
   color: rgb(0, 255, 229);
   font-weight: bold;
@@ -375,9 +376,8 @@ span {
   padding: 20px;
 }
 .includesItems {
-  border: 1px solid black;
   position: relative;
-  padding: 5px 0;
+  border-radius: 10px;
 }
 .includesItems div i {
   font-size: 24px;
@@ -390,7 +390,7 @@ span {
 .includeText {
   position: absolute;
   left: 0;
-  top: -35px;
+  transform: rotate(-90deg);
   background-color: pink;
   padding: 5px;
 }
@@ -411,6 +411,7 @@ span {
   background-color: rgb(9, 142, 53);
   border-radius: 10px;
   color: #fff;
+  cursor: pointer;
 }
 #whatapp {
   background-color: rgb(5, 119, 5);
@@ -428,6 +429,7 @@ span {
   justify-content: space-between;
   align-items: center;
 }
+/* Travel in Comfort with Our Diverse Fleet! section start */
 .fleetImg {
   width: 100%;
   height: 60vh;
@@ -437,11 +439,18 @@ span {
   background-repeat: no-repeat;
 }
 
-.aboutUsContnt button:hover {
-  background-color: black;
+.aboutUsContnt button {
+  background-color: #000;
   color: #fff;
   transition: 0.7s;
 }
+.aboutUsContnt button:hover {
+  background-color: rgb(226, 220, 220);
+  color: #000;
+  transition: 0.7s;
+}
+/* Travel in Comfort with Our Diverse Fleet! section end*/
+/* Why choose us section start */
 .point {
   display: flex;
   align-items: flex-start;
@@ -471,6 +480,8 @@ span {
   background-position: center;
   background-repeat: no-repeat;
 }
+/* Why choose us section end */
+/* Discover tour by themes start */
 #discover .container-fluid {
   padding: 100px 0 0 0;
 }
@@ -492,6 +503,8 @@ span {
   text-align: center;
   padding: 20px 40px;
 }
+/* Discover tour by themes end */
+/* Customer Testimonial Section Start */
 .happyCustomer {
   margin-top: 30px;
 }
@@ -533,6 +546,7 @@ span {
   height: 100px;
   border-radius: 50%;
 }
+/* Customer Testimonial Section End*/
 footer {
   width: 100%;
   background-color: black;
@@ -630,7 +644,7 @@ footer p {
     max-width: none;
     padding-right: 0;
   }
-
+  /* Most popular destinations */
   .ovflowContent {
     transform: translateX(0);
     transition: 0.5s;
@@ -640,22 +654,28 @@ footer p {
   }
 }
 
+/* =============== Home css Complete ================== */
+
+/* =============== About Us Page css Start ================== */
+
 .aboutImg {
   width: 100%;
   height: 50vh;
-  background-image: url("https://plus.unsplash.com/premium_photo-1672116452571-896980a801c8?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2l0eXxlbnwwfHwwfHx8MA%3D%3D");
+  background-image: url("https://imgs.search.brave.com/YJCCVT-Gdwgo81Bx-QslizRlaua8Zo9fG3BatfRySrc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMjE1/NDk0OTE0MS9waG90/by9iZWF1dGlmdWwt/dGVhLWdhcmRlbi5q/cGc_Yj0xJnM9NjEy/eDYxMiZ3PTAmaz0y/MCZjPTNQTVFMOWhD/QWZ2Nm91VWktMTlf/d1ozWXhNUlhlVmdE/WXFLQzJQNzYyTVk9");
   background-size: cover;
-  background-position: center;
+  background-position: top;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 40px;
   color: #fff;
 }
+/* =============== About Us Page css end ================== */
+/* =============== car and Service Page css Start ================== */
 .serviceImg {
   width: 100%;
   height: 50vh;
-  background-image: url("https://plus.unsplash.com/premium_photo-1671734045770-4b9e1a5e53a0?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bG9uZG9ufGVufDB8fDB8fHww");
+  background-image: url("https://imgs.search.brave.com/3LlQjne6RZtwdETZ7JSXU_JY4ZBEEbMqI2ryFJP7C7c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YTEudGhyaWxsb3Bo/aWxpYS5jb20vZmls/ZXN0b3JlLzhzMTcx/b2JmaHZkMzZkNTY5/ZGlvbDVpNHRmZmxf/c2h1dHRlcnN0b2Nr/XzIyODMwMTU3NDEu/anBn");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -665,7 +685,6 @@ footer p {
   color: #fff;
 }
 
-/* Service Section start */
 .serviceCard {
   border: 1px solid rgb(175, 172, 172);
   /* height: 450px; */
@@ -692,9 +711,8 @@ footer p {
   text-align: center;
 }
 .serviceCardText button {
-  background-color: transparent;
+  background-color: #1da8cb46;
   color: #000;
-  border: 1px solid #c4bfbf;
   position: relative;
   overflow: hidden;
   border-radius: 5px;
@@ -707,7 +725,7 @@ footer p {
   left: -100%;
   width: 100%;
   height: 100%;
-  background-color: #ff6b03;
+  background-color: #1da9cb;
   transition: 0.5s;
 }
 .serviceCardText button:hover::before {
@@ -729,19 +747,30 @@ footer p {
   cursor: pointer;
 }
 .whatsAppLogo i {
-  font-size: 25px;
-  color: rgb(220, 230, 220);
+  color: #1da9cb;
 }
 
 .vehicleServiceIcon {
-  background-color: rgba(224, 193, 127, 0.739);
+  display: flex;
+  gap: 15px;
+  padding: 0 20px;
+}
+.vehicleServiceIcon button {
+  padding: 0;
+  color: #000;
+  background-color: transparent;
 }
 .vehicleServiceIcon i {
   cursor: pointer;
+  font-size: 30px;
 }
 a {
   text-decoration: none;
 }
+
+/* =============== car and Service Page css End ================== */
+
+/* =============== Destination  Page css Start ================== */
 
 .destinationContent {
   height: 500px;
@@ -759,19 +788,34 @@ a {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  clip-path: polygon(
+    0% 15%,
+    15% 15%,
+    15% 0%,
+    85% 0%,
+    85% 15%,
+    100% 15%,
+    100% 85%,
+    85% 85%,
+    85% 100%,
+    15% 100%,
+    15% 85%,
+    0% 85%
+  );
 }
 .state {
   position: absolute;
-  top: 10%;
-  left: 10%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
   background-color: #ff6b03;
   color: #fff;
   padding: 10px 20px;
-  font-size: 26px;
+  font-size: 20px;
   border-radius: 10px;
 }
 .destinationContent button {
-  background-color: #ff6b03;
+  background-color: rgba(0, 0, 0, 0.868);
   color: white;
   border-radius: 5px;
   position: relative;
@@ -787,7 +831,7 @@ a {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.868);
+  background-color: #ff6b03;
   z-index: -1;
 }
 .destinationContent button:hover:before {
@@ -798,11 +842,13 @@ a {
   color: white;
   z-index: 1;
 }
+/* =============== Destination  Page css End ================== */
 
+/* =============== Tour package  Page css Start ================== */
 .TourPackageImg {
   width: 100%;
   height: 50vh;
-  background-image: url("https://images.unsplash.com/photo-1569949381669-ecf31ae8e613?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dG91cnxlbnwwfHwwfHx8MA%3D%3D");
+  background-image: url("https://imgs.search.brave.com/9UL-WGi73b_j8w8Nuy7VtirznfZX02-MbIrMyVpo6aw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dHJhdmVsdG91cmlz/dGVyLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyNC8wOS9B/c3NhbS1Ub3VyLVBh/Y2thZ2VzLUZyb20t/R3V3YWhhdGkud2Vi/cA");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -838,6 +884,100 @@ a {
   object-fit: cover;
 }
 
+/* Pop Up Box CSS Start */
+
+#popup button {
+  background-color: #ff6b03;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 50px auto;
+  display: block;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-box {
+  background: white;
+  max-width: 600px;
+  width: 90%;
+  padding: 25px;
+  border-radius: 12px;
+  position: relative;
+  animation: popupFade 0.3s ease-in-out;
+}
+
+@keyframes popupFade {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.popup-box h2 {
+  color: #ff6b03;
+  margin-top: 0;
+}
+
+.popup-box ul {
+  padding-left: 20px;
+}
+
+.popup-box li::marker {
+  color: #ff6b03;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 22px;
+  cursor: pointer;
+  color: #333;
+}
+
+.book-btn {
+  background-color: #00804b;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s;
+}
+
+.book-btn:hover {
+  background-color: #00663a;
+}
+
+@media (max-width: 600px) {
+  .popup-box {
+    padding: 20px;
+  }
+}
+
+/* =============== Tour package  Page css End ================== */
 .contactCards {
   height: 250px;
   padding: 30px 10px;
@@ -888,21 +1028,26 @@ a {
 }
 .baishnavieForm button {
   margin-top: 30px;
-  background-color: #ff6b03;
+  background-color: #000;
   color: #fff;
   font-size: 20px;
   transition: 0.5s;
   border-radius: 20px;
 }
 .baishnavieForm button:hover {
-  background-color: #ff6c03e1;
+  background-color: #000;
   transition: 0.5s;
 }
 .contactImg {
   width: 100%;
   height: 500px;
-  background-color: red;
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 .contactImg img {
   height: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%); */
 }

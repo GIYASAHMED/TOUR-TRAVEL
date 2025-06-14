@@ -125,7 +125,7 @@
               a must-visit destination.
             </p>
             <a href="#"
-              ><button>
+              ><button class="enqueryNow">
                 Enquire Now <i class="ri-arrow-right-up-line"></i></button
             ></a>
           </div>
@@ -140,7 +140,7 @@
               significance.
             </p>
             <a href="#"
-              ><button>
+              ><button class="enqueryNow">
                 Enquire Now <i class="ri-arrow-right-up-line"></i></button
             ></a>
           </div>
@@ -179,7 +179,7 @@
               truly unforgettable.
             </p>
             <a href="#"
-              ><button>
+              ><button class="enqueryNow">
                 Enquire Now <i class="ri-arrow-right-up-line"></i></button
             ></a>
           </div>
@@ -194,7 +194,7 @@
               heritage.
             </p>
             <a href="#"
-              ><button>
+              ><button class="enqueryNow">
                 Enquire Now <i class="ri-arrow-right-up-line"></i></button
             ></a>
           </div>
@@ -233,7 +233,7 @@
               spirit.
             </p>
             <a href="#"
-              ><button>
+              ><button class="enqueryNow">
                 Enquire Now <i class="ri-arrow-right-up-line"></i></button
             ></a>
           </div>
@@ -248,7 +248,7 @@
               famous festivals throughout the year.
             </p>
             <a href="#"
-              ><button>
+              ><button class="enqueryNow">
                 Enquire Now <i class="ri-arrow-right-up-line"></i></button
             ></a>
           </div>
@@ -336,6 +336,15 @@
       integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      let enqueryNow = document.querySelectorAll(".enqueryNow");
+      enqueryNow.forEach((e) => {
+        e.addEventListener("click", () => {
+          window.location.href = "contact.html";
+        });
+      });
+    </script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
