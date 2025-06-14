@@ -44,7 +44,7 @@ function handleNavbar() {
 window.addEventListener("scroll", handleNavbar);
 window.addEventListener("DOMContentLoaded", handleNavbar);
 
-// WhatsApp Api
+// ============ WhatsApp Api ================
 function redirectToWhatsApp(phoneNumber, message) {
   // Remove any non-digit characters from phone number
   const cleanedNumber = phoneNumber.replace(/\D/g, "");

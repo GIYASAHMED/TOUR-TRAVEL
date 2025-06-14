@@ -166,11 +166,17 @@ span {
 .cards {
   height: 600px;
   position: relative;
+  overflow: hidden;
 }
 .cards img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: 0.5s;
+}
+.cards:hover img {
+  scale: 1.15;
+  transition: 0.5s;
 }
 .cardsContent {
   position: absolute;
@@ -178,7 +184,7 @@ span {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #0000005a;
+  background-color: #00000099;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -287,6 +293,9 @@ span {
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
 }
+/* About style ends */
+
+/* Packages swiper start */
 .packagesCarousel .item {
   width: 100%;
   height: 400px;
@@ -340,18 +349,15 @@ span {
 }
 
 .swiper {
-  /* width: 600px; */
   width: 100%;
-  /* height: 500px; */
 }
 .swiper-slide {
-  /* width: 100%; */
   height: 100%;
-  /* background-color: red; */
 }
 .swiper-slide .package {
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   border-radius: 20px;
+  height: fit-content;
 }
 .packageImg {
   height: 300px;
@@ -486,6 +492,7 @@ span {
   text-align: center;
   padding: 20px 40px;
 }
+
 .happyCustomer {
   width: 100%;
   height: 60vh;
@@ -493,6 +500,31 @@ span {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+.customerReviewSlide {
+  height: fit-content;
+  margin-top: 30px;
+}
+.cstmr {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.cstmr img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.cstmr h5 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.rvcontent {
+  box-shadow: rgba(118, 114, 114, 0.2) 0px 2px 8px 0px;
+  padding: 20px 20px;
+}
+.rvcontent p {
+  font-size: 17px;
 }
 #customerId {
   width: 100px;
@@ -805,7 +837,6 @@ a {
 }
 
 .contactCards {
-  /* border: 1px solid black; */
   height: 250px;
   padding: 30px 10px;
   text-align: center;
