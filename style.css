@@ -171,6 +171,44 @@ span {
   color: #000;
   transition: 0.5s;
 }
+
+/* Whatsapp and call fixed icon container start */
+.fixedIconsContainer {
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+  z-index: 99;
+}
+.fixedIconsContainer .whatsapp {
+  width: 60px;
+  height: 60px;
+  background-color: #24d366;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.fixedIconsContainer .whatsapp i {
+  font-size: 40px;
+  color: #fff;
+}
+.fixedIconsContainer .callUs {
+  width: 60px;
+  height: 60px;
+  background-color: #060549;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.fixedIconsContainer .callUs i {
+  font-size: 40px;
+  color: #fff;
+}
+
+/* Whatsapp and call fixed icon container end */
 /* Header Complete */
 .cards {
   height: 600px;
@@ -958,7 +996,6 @@ a {
   font-size: 14px;
 }
 .packageHeading {
-  /* border: 1px solid black; */
   height: 140px;
 }
 

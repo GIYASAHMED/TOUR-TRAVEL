@@ -97,16 +97,28 @@ whatsappVehicle.forEach((e) => {
   console.log(e);
 
   e.addEventListener("click", function () {
-    const phoneNumber = "917002525098"; // Replace with your variable
-    const message = "Hello, this is a test message"; // Replace with your variable
+    const phoneNumber = "8134961443"; // Replace with your variable
+    const message = "Hello, welcome to Baishnavie Travels"; // Replace with your variable
     redirectToWhatsApp(phoneNumber, message);
   });
 });
 
-var swiper = new Swiper(".testimonialSwiper", {
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
+// Fixed whatsapp icon js
+let whatsappfixedIcon = document.querySelectorAll(".whatsapp");
+whatsappfixedIcon.forEach((e) => {
+  console.log(e);
+
+  e.addEventListener("click", function () {
+    const phoneNumber = "8134961443"; // Replace with your variable
+    const message = "Hello, welcome to Baishnavie Travels"; // Replace with your variable
+    redirectToWhatsApp(phoneNumber, message);
+  });
 });
+
+// var swiper = new Swiper(".testimonialSwiper", {
+//   spaceBetween: 30,
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+// });
