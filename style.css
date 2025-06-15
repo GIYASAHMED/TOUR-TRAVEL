@@ -738,16 +738,23 @@ footer p {
   color: #fff;
 }
 .whatsAppLogo {
+  width: 60px;
+  height: 60px;
   text-decoration: none;
-  padding: 5px 10px;
+  padding: 5px;
   background-color: green;
   position: absolute;
   top: 5%;
   right: 5%;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
 }
 .whatsAppLogo i {
-  color: #1da9cb;
+  color: #fff;
+  font-size: 30px;
 }
 
 .vehicleServiceIcon {
@@ -774,13 +781,13 @@ a {
 
 .destinationContent {
   height: 500px;
+  border: 1px solid rgb(137, 137, 147);
+  padding: 30px;
+  border-radius: 30px;
 }
-@media (max-width: 974px) {
-  .destinationContent {
-    height: auto;
-  }
-}
+
 .destinationImg {
+  width: 100%;
   height: 100%;
   position: relative;
 }
@@ -886,95 +893,65 @@ a {
 
 /* Pop Up Box CSS Start */
 
-#popup button {
-  background-color: #ff6b03;
-  color: #fff;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 16px;
-  margin: 50px auto;
-  display: block;
-}
-
-.popup-overlay {
+.popup-modal {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7);
   display: none;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 99999;
 }
 
-.popup-box {
-  background: white;
-  max-width: 600px;
+.popup-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
   width: 90%;
-  padding: 25px;
-  border-radius: 12px;
+  max-width: 500px;
+  text-align: left;
   position: relative;
-  animation: popupFade 0.3s ease-in-out;
+}
+.popup-content h2 {
+  font-size: 24px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid black;
+}
+.popup-content p span {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  color: rgb(11, 11, 49);
 }
 
-@keyframes popupFade {
-  from {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+.pkgButton {
+  background-color: black;
+  color: #fff;
+  border-radius: 20px;
+  transition: 0.3s;
 }
-
-.popup-box h2 {
-  color: #ff6b03;
-  margin-top: 0;
+.pkgButton:hover {
+  background-color: #1da9cb;
+  color: #fff;
+  transition: 0.3s;
 }
-
-.popup-box ul {
-  padding-left: 20px;
-}
-
-.popup-box li::marker {
-  color: #ff6b03;
-}
-
 .close-btn {
   position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 22px;
+  right: 35px;
+  top: 20px;
+  font-size: 24px;
   cursor: pointer;
-  color: #333;
+  font-size: 30px;
+  color: black;
 }
-
-.book-btn {
-  background-color: #00804b;
-  color: #fff;
-  padding: 12px 20px;
-  font-size: 16px;
-  border: none;
-  border-radius: 8px;
-  margin-top: 20px;
-  cursor: pointer;
-  width: 100%;
-  transition: background 0.3s;
+.tourPlace {
+  font-size: 14px;
 }
-
-.book-btn:hover {
-  background-color: #00663a;
-}
-
-@media (max-width: 600px) {
-  .popup-box {
-    padding: 20px;
-  }
+.packageHeading {
+  /* border: 1px solid black; */
+  height: 140px;
 }
 
 /* =============== Tour package  Page css End ================== */
@@ -1041,11 +1018,8 @@ a {
 .contactImg {
   width: 100%;
   height: 500px;
-  display: flex;
-  justify-content: end;
-  align-items: center;
 }
-.contactImg img {
+.contactImg iframe {
   height: 100%;
   height: 100%;
   object-fit: cover;

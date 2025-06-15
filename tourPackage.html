@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BAISHNAVIE TRAVELS</title>
+    <link
+      rel="shortcut icon"
+      href="./images/baishnavieLogo.png"
+      type="image/x-icon"
+    />
     <!-- Bootstrap CDN link -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
@@ -42,8 +47,8 @@
           class="navbar navbar-expand-lg fixed-top lg-px-5 sm-px-0"
         >
           <div class="container">
-            <a href="">
-              <img src="./baishnavieLogo.png" alt="" id="mainLogo" />
+            <a href="index.html">
+              <img src="./images/baishnavieLogo.png" alt="" id="mainLogo" />
             </a>
             <button
               class="navbar-toggler"
@@ -103,22 +108,24 @@
             <div class="package tourPack">
               <div class="packageImg">
                 <img
+                  src="https://imgs.search.brave.com/Dt-R0xrtfxSRlcdg9pMm12XujNSftyAGlvvqMwdoUWo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YTEudGhyaWxsb3Bo/aWxpYS5jb20vZmls/ZXN0b3JlL2p0Mmxt/emhsczFib3V0OXIx/bWFhY25xeGIwbjdf/c2h1dHRlcnN0b2Nr/XzE3MjkxNDE5NzUu/anBn"
                   class="img-fluid"
-                  src="https://images.unsplash.com/photo-1589882485484-c073e3742e60?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGFzc2FtfGVufDB8fDB8fHww"
                   alt=""
                 />
               </div>
               <div class="packageContent">
-                <h5 class="tourName fw-bold text-success">
-                  North East tour packages
-                </h5>
-                <p class="tourSchedule">09 Nights / 10 days</p>
-                <p class="tourPlace">
-                  <i class="ri-map-pin-line"></i>Puri > Kolkata
-                </p>
-                <div
-                  class="includesItems d-flex justify-content-center align-items-center gap-3"
-                >
+                <div class="packageHeading">
+                  <h5 class="tourName fw-bold text-success">
+                    Northeast Tour Packages
+                  </h5>
+                  <p class="tourSchedule">05 Nights/ 06 Days</p>
+                  <p class="tourPlace">
+                    <i class="ri-map-pin-line"></i> GUWAHATI > SHILLONG >
+                    KAZIRANGA
+                  </p>
+                </div>
+
+                <div class="includesItems d-flex justify-content-center gap-3">
                   <div>
                     <i class="ri-hotel-line"></i>
                     <p>Hotel</p>
@@ -129,38 +136,49 @@
                   </div>
                   <div>
                     <i class="ri-glasses-line"></i>
-                    <p>SightSeeing</p>
+                    <p>Sightseeing</p>
                   </div>
-                  <div class="includeText">Includes</div>
                 </div>
-                <div
-                  class="contactLinks d-flex justify-content-center align-items-center gap-3"
-                >
-                <div class="view" onclick="openPopup()">View Tour Details <i class="ri-arrow-right-up-line"></i></div>
+
+                <div class="contactLinks d-flex justify-content-center gap-3">
+                  <div
+                    class="view"
+                    onclick="openPopup(this)"
+                    data-title="Arunachal Meghalaya Tour"
+                    data-duration="09 Nights / 10 Days"
+                    data-route="Guwahati → Shillong → Mawlynnong → Dawki → Cherrapunjee → Kaziranga"
+                    data-includes="Room with Breakfast & Dinner, Vehicle, Driver Fees, Toll Parking"
+                    data-excludes="Sightseeing Fees, Drinks, Kaziranga Jeep Safari"
+                  >
+                    View Tour Details <i class="ri-arrow-right-up-line"></i>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="col-lg-4 mb-3">
             <div class="package tourPack">
               <div class="packageImg">
                 <img
+                  src="https://imgs.search.brave.com/zSTHkszMKYRTVMO4jvzJVksISLBlkzIx9yHp1BPhSSw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/a2FqYWF3YS5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjIv/MDYvYm9yaGlsbC1m/YWxscy0zLWthZ2Et/NzY4eDQ3My5qcGc"
                   class="img-fluid"
-                  src="https://images.unsplash.com/photo-1521437620269-f477f5437820?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWVnaGFsYXlhfGVufDB8fDB8fHww"
                   alt=""
                 />
               </div>
               <div class="packageContent">
-                <h5 class="tourName fw-bold text-success">
-                  Meghalaya Tour Packages
-                </h5>
-                <p class="tourSchedule">09 Nights / 10 days</p>
-                <p class="tourPlace">
-                  <i class="ri-map-pin-line"></i>Puri > Kolkata
-                </p>
-                <div
-                  class="includesItems d-flex justify-content-center align-items-center gap-3"
-                >
+                <div class="packageHeading">
+                  <h5 class="tourName fw-bold text-success">
+                    Meghalaya Tour Packages
+                  </h5>
+                  <p class="tourSchedule">04 Nights/ 05 Days</p>
+                  <p class="tourPlace">
+                    <i class="ri-map-pin-line"></i> GUWAHATI > SHILLONG >
+                    MAWLYNNONG > CHERRAPUNJEE
+                  </p>
+                </div>
+
+                <div class="includesItems d-flex justify-content-center gap-3">
                   <div>
                     <i class="ri-hotel-line"></i>
                     <p>Hotel</p>
@@ -171,38 +189,49 @@
                   </div>
                   <div>
                     <i class="ri-glasses-line"></i>
-                    <p>SightSeeing</p>
+                    <p>Sightseeing</p>
                   </div>
-                  <div class="includeText">Includes</div>
                 </div>
-                <div
-                  class="contactLinks d-flex justify-content-center align-items-center gap-3"
-                >
-                <div class="view" onclick="openPopup()">View Tour Details <i class="ri-arrow-right-up-line"></i></div>
+
+                <div class="contactLinks d-flex justify-content-center gap-3">
+                  <div
+                    class="view"
+                    onclick="openPopup(this)"
+                    data-title="Meghalaya Tour Packages"
+                    data-duration="04 Nights/ 05 Days"
+                    data-route="Guwahati -> Shillong -> Mawlynnong -> Cherrapunjee"
+                    data-includes="Room with Breakfast & Dinner, Vehicle, Driver Fees, Toll Parking"
+                    data-excludes="Sightseeing Fees, Drinks, Kaziranga Jeep Safari"
+                  >
+                    View Tour Details <i class="ri-arrow-right-up-line"></i>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+
+          <div class="col-lg-4 mb-3">
             <div class="package tourPack">
               <div class="packageImg">
                 <img
+                  src="https://imgs.search.brave.com/WQQuBbkWvoYGr15dlQlit6trgEOSvJA0CStVYbH2uJM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bm9ydGhlYXN0dG91/ci5pbi9pbWFnZXMv/dG91cnBhY2thZ2Uv/Z29sZGVuLXRvdXIt/b2Ytbm9ydGgtZWFz/dC0wMy1zdGF0ZV8x/NzMxMjY1MDg3NDY2/MTA1ODgyLmpwZw"
                   class="img-fluid"
-                  src="https://images.unsplash.com/photo-1710255075191-59a314621c26?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fHB1cmklMjBrb2xrYXRhfGVufDB8fDB8fHww"
                   alt=""
                 />
               </div>
               <div class="packageContent">
-                <h5 class="tourName fw-bold text-success">
-                  Puri Kolkata Tour Packages
-                </h5>
-                <p class="tourSchedule">09 Nights / 10 days</p>
-                <p class="tourPlace">
-                  <i class="ri-map-pin-line"></i>Puri > Kolkata
-                </p>
-                <div
-                  class="includesItems d-flex justify-content-center align-items-center gap-3"
-                >
+                <div class="packageHeading">
+                  <h5 class="tourName fw-bold text-success">
+                    Northeast Tour Packages
+                  </h5>
+                  <p class="tourSchedule">11 Nights/ 12 Days</p>
+                  <p class="tourPlace">
+                    <i class="ri-map-pin-line"></i> GUWAHATI > SHILLONG >
+                    KAZIRANGA > DIRANG > TAWANG > BOMDILLA
+                  </p>
+                </div>
+
+                <div class="includesItems d-flex justify-content-center gap-3">
                   <div>
                     <i class="ri-hotel-line"></i>
                     <p>Hotel</p>
@@ -213,38 +242,49 @@
                   </div>
                   <div>
                     <i class="ri-glasses-line"></i>
-                    <p>SightSeeing</p>
+                    <p>Sightseeing</p>
                   </div>
-                  <div class="includeText">Includes</div>
                 </div>
-                <div
-                  class="contactLinks d-flex justify-content-center align-items-center gap-3"
-                >
-                <div class="view" onclick="openPopup()">View Tour Details <i class="ri-arrow-right-up-line"></i></div>
+
+                <div class="contactLinks d-flex justify-content-center gap-3">
+                  <div
+                    class="view"
+                    onclick="openPopup(this)"
+                    data-title="Arunachal Meghalaya Tour"
+                    data-duration="09 Nights / 10 Days > Guwahati 1N Shillong 3N Mawlynnong, Dawki(stay shillong) Cherrapunjee(stay shillong) Kaziranga(1N) Dirang(1N) TAWANG(3N) BOMDILLA(1N) GUWAHATI (1N)"
+                    data-route="Guwahati -> Shillong -> Awlynnong -> Dawki Shillong -> Cherrapunjee -> Shillong -> Kaziranga -> Dirang -> Tawang -> Bomdilla -> Guwahati"
+                    data-includes="Room with Breakfast & Dinner, Vehicle, Driver Fees, Toll Parking"
+                    data-excludes="Sightseeing Fees, Drinks, Kaziranga Jeep Safari"
+                  >
+                    View Tour Details <i class="ri-arrow-right-up-line"></i>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+
+          <div class="col-lg-4 mb-3">
             <div class="package tourPack">
               <div class="packageImg">
                 <img
+                  src="https://imgs.search.brave.com/k0ZRVkgRzxKmgPdXsZAdMD7Hkrj6Nk1zt7n8iRm1Ovs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YTEudGhyaWxsb3Bo/aWxpYS5jb20vZmls/ZXN0b3JlL2kxOXV4/cmJydnl1ODd4Znpj/YXlmeTNmeG5wdHBf/cXVxc2FlcWFocXgu/cG5nP3c9YXV0byZo/PTYwMA"
                   class="img-fluid"
-                  src="https://images.unsplash.com/photo-1552978534-9d01e1f91517?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVnaGFsYXlhfGVufDB8fDB8fHww"
                   alt=""
                 />
               </div>
               <div class="packageContent">
-                <h5 class="tourName fw-bold text-success">
-                  Arunachal Meghalaya Tour Packages
-                </h5>
-                <p class="tourSchedule">09 Nights / 10 days</p>
-                <p class="tourPlace">
-                  <i class="ri-map-pin-line"></i>Puri > Kolkata
-                </p>
-                <div
-                  class="includesItems d-flex justify-content-center align-items-center gap-3"
-                >
+                <div class="packageHeading">
+                  <h5 class="tourName fw-bold text-success">
+                    Arunachal Tour Packages
+                  </h5>
+                  <p class="tourSchedule">07 Nights/ 08 Days</p>
+                  <p class="tourPlace">
+                    <i class="ri-map-pin-line"></i> KAZIRANGA > DIRANG > TAWANG
+                    > BOMDILLA > GUWAHATI
+                  </p>
+                </div>
+
+                <div class="includesItems d-flex justify-content-center gap-3">
                   <div>
                     <i class="ri-hotel-line"></i>
                     <p>Hotel</p>
@@ -255,17 +295,126 @@
                   </div>
                   <div>
                     <i class="ri-glasses-line"></i>
-                    <p>SightSeeing</p>
+                    <p>Sightseeing</p>
                   </div>
-                  <div class="includeText">Includes</div>
                 </div>
-                <div
-                  class="contactLinks d-flex justify-content-center align-items-center gap-3"
-                >
-                  <div class="view" onclick="openPopup()">View Tour Details <i class="ri-arrow-right-up-line"></i></div>
-                    
+
+                <div class="contactLinks d-flex justify-content-center gap-3">
+                  <div
+                    class="view"
+                    onclick="openPopup(this)"
+                    data-title="Arunachal Tour Packages"
+                    data-duration="07 Nights/ 08 Days GUWAHATI (1N) KAZIRANGA (2N) DIRANG(1N) TAWANG (2N) BOMDILLA(1N)"
+                    data-route="Guwahati -> Kaziranga -> Dirang -> Tawang -> Bomdilla -> Guwahati"
+                    data-includes="Room with Breakfast & Dinner, Vehicle, Driver Fees, Toll Parking"
+                    data-excludes="Sightseeing Fees, Drinks, Kaziranga Jeep Safari"
+                  >
+                    View Tour Details <i class="ri-arrow-right-up-line"></i>
                   </div>
-                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-3">
+            <div class="package tourPack">
+              <div class="packageImg">
+                <img
+                  src="https://imgs.search.brave.com/tR8vbcX46DD55Z5thRqM1Xs-cHg3JtGWGGrtlBI_lxE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/dmVlbmF3b3JsZC5j/b20vZ3JvdXAtdG91/cnMvaW5kaWEvc2lr/a2ltLWRhcmplZWxp/bmcvc2RncC9zZGds/LWlwLXRoYi1TREdQ/LTEwMzIwMjUuanBn"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="packageContent">
+                <div class="packageHeading">
+                  <h5 class="tourName fw-bold text-success">
+                    Gangtok-Lachen-Lachung Tour Packages
+                  </h5>
+                  <p class="tourSchedule">06 Nights/ 07 Days</p>
+                  <p class="tourPlace">
+                    <i class="ri-map-pin-line"></i> GANGTOK > LACHEN
+                  </p>
+                </div>
+
+                <div class="includesItems d-flex justify-content-center gap-3">
+                  <div>
+                    <i class="ri-hotel-line"></i>
+                    <p>Hotel</p>
+                  </div>
+                  <div>
+                    <i class="ri-restaurant-line"></i>
+                    <p>Meals</p>
+                  </div>
+                  <div>
+                    <i class="ri-glasses-line"></i>
+                    <p>Sightseeing</p>
+                  </div>
+                </div>
+
+                <div class="contactLinks d-flex justify-content-center gap-3">
+                  <div
+                    class="view"
+                    onclick="openPopup(this)"
+                    data-title="Gangtok-Lachen-Lachung Tour Packages"
+                    data-duration="06 Nights/ 07 Days"
+                    data-route="Gangtok -> Lachen"
+                    data-includes="Room with Breakfast & Dinner, Vehicle, Driver Fees, Toll Parking"
+                    data-excludes="Sightseeing Fees, Drinks, Kaziranga Jeep Safari"
+                  >
+                    View Tour Details <i class="ri-arrow-right-up-line"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-3">
+            <div class="package tourPack">
+              <div class="packageImg">
+                <img
+                  src="https://imgs.search.brave.com/Y1YYxBas4WGM5HUatw0fMDDNOvuTzfvXNJkD0n_eynI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9i/L2I0L1B1cmktZ3Vu/ZGljYS1tYW5kaXIu/anBn"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="packageContent">
+                <div class="packageHeading">
+                  <h5 class="tourName fw-bold text-success">
+                    Puri-kolkata Tour Packages
+                  </h5>
+                  <p class="tourSchedule">05 Nights/ 04 Days</p>
+                  <p class="tourPlace">
+                    <i class="ri-map-pin-line"></i> PURI > KOLKATA
+                  </p>
+                </div>
+
+                <div class="includesItems d-flex justify-content-center gap-3">
+                  <div>
+                    <i class="ri-hotel-line"></i>
+                    <p>Hotel</p>
+                  </div>
+                  <div>
+                    <i class="ri-restaurant-line"></i>
+                    <p>Meals</p>
+                  </div>
+                  <div>
+                    <i class="ri-glasses-line"></i>
+                    <p>Sightseeing</p>
+                  </div>
+                </div>
+
+                <div class="contactLinks d-flex justify-content-center gap-3">
+                  <div
+                    class="view"
+                    onclick="openPopup(this)"
+                    data-title=" Puri-kolkata Tour Packages"
+                    data-duration="05 Nights/ 04 Days"
+                    data-route="Puri -> Kolkata"
+                    data-includes="Room with Breakfast & Dinner, Vehicle, Driver Fees, Toll Parking"
+                    data-excludes="Sightseeing Fees, Drinks, Kaziranga Jeep Safari"
+                  >
+                    View Tour Details <i class="ri-arrow-right-up-line"></i>
+                  </div>
                 </div>
               </div>
             </div>
@@ -274,36 +423,19 @@
       </div>
     </section>
 
-    <!-- ========== PopUp start ========= -->
-    <div class="popup-overlay" id="popup">
-      <div class="popup-box">
-        <span class="close-btn" onclick="closePopup()">&times;</span>
-        <h2>Northeast Tour Package</h2>
-        <p><strong>Duration:</strong> 05 Nights / 06 Days</p>
-        <p>
-          <strong>Route:</strong> Guwahati → Shillong → Mawlynnong → Dawki →
-          Cherrapunjee → Shillong → Kaziranga
-        </p>
+    <!-- ========== Global PopUp start ========= -->
+    <div class="popup-modal" id="popupModal">
+      <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()"
+          ><i class="ri-close-large-fill"></i
+        ></span>
+        <h2 id="popupTitle"></h2>
+        <p><strong>Duration:</strong> <span id="popupDuration"></span></p>
+        <p><strong>Route:</strong> <span id="popupRoute"></span></p>
 
-        <p><strong>Package Includes:</strong></p>
-        <ul>
-          <li>Room with Breakfast & Dinner</li>
-          <li>Vehicle</li>
-          <li>Driver Fees, Toll & Parking</li>
-        </ul>
-
-        <p><strong>Package Excludes:</strong></p>
-        <ul>
-          <li>Sightseeing Fees</li>
-          <li>Hard/Soft Drinks</li>
-          <li>Kaziranga Jeep Safari</li>
-          <li>Anything that is not included</li>
-        </ul>
-
-        <button class="book-btn" onclick="alert('Redirecting to payment...')">
-          Book Now
-        </button>
-        
+        <p><strong>Includes:</strong> <span id="popupIncludes"></span></p>
+        <p><strong>Excludes:</strong> <span id="popupExcludes"></span></p>
+        <button onclick="pageChange()" class="pkgButton">Enquiry Now</button>
       </div>
     </div>
 
@@ -314,7 +446,7 @@
         <div class="row">
           <div class="col-lg-4 col-sm-12 mb-5">
             <!-- <h5>About Us</h5> -->
-            <img src="./baishnavieLogo.png" alt="" id="mainLogo" />
+            <img src="./images/baishnavieLogo.png" alt="" id="mainLogo" />
             <p>
               Since 2009, Baishnavie Travels has provided seamless travel
               experiences, especially across Northeast India and the rest of
@@ -365,7 +497,6 @@
         </div>
       </div>
     </footer>
-    <!-- testimonial section end -->
 
     <!-- Bootstrap js CDN Link -->
     <script
@@ -383,12 +514,28 @@
     <script src="script.js"></script>
 
     <script>
-      function openPopup() {
-        document.getElementById("popup").style.display = "flex";
+      // PopUp function start **********8
+      function openPopup(element) {
+        document.getElementById("popupTitle").innerText = element.dataset.title;
+        document.getElementById("popupDuration").innerText =
+          element.dataset.duration;
+        document.getElementById("popupRoute").innerText = element.dataset.route;
+        document.getElementById("popupIncludes").innerText =
+          element.dataset.includes;
+        document.getElementById("popupExcludes").innerText =
+          element.dataset.excludes;
+
+        document.getElementById("popupModal").style.display = "flex";
       }
 
       function closePopup() {
-        document.getElementById("popup").style.display = "none";
+        document.getElementById("popupModal").style.display = "none";
+      }
+      // PopUp function end ************
+
+      // PopUp enquiry Now Button
+      function pageChange() {
+        window.location.href = "contact.html";
       }
     </script>
   </body>
