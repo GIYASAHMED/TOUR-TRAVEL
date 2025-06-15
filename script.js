@@ -1,3 +1,5 @@
+// Hero slide Owl carousal start
+
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     loop: true,
@@ -16,9 +18,12 @@ $(document).ready(function () {
     },
   });
 });
+// Hero slide Owl carousal end
 
+// Navbar hide on scroll
 const navbar = document.querySelector("#navBar");
 const navLink = document.querySelectorAll(".nav-link2");
+const main = document.querySelector("#main");
 let lastScroll = 50;
 
 function handleNavbar() {

@@ -150,6 +150,14 @@ span {
   justify-content: center;
   align-items: center;
 }
+/* carousel  btn extra class start */
+.buttons button .en {
+  color: #fff;
+}
+.hmbtn:hover a {
+  color: #000;
+}
+/* carousel  btn extra class end */
 .buttons button i {
   font-size: 20px;
 }
@@ -158,7 +166,7 @@ span {
   color: #fff;
   transition: 0.5s;
 }
-.buttons button:nth-child(1):hover {
+.buttons button:hover {
   background-color: white;
   color: #000;
   transition: 0.5s;
