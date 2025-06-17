@@ -41,6 +41,13 @@ button {
 #navBar button {
   width: 60px;
 }
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
 @media (max-width: 978px) {
   #menuLinks {
     background-color: #000;
@@ -424,6 +431,7 @@ span {
 .includesItems {
   position: relative;
   border-radius: 10px;
+  border: 1px solid red;
 }
 .includesItems div i {
   font-size: 24px;
